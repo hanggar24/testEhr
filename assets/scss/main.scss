@@ -1,0 +1,68 @@
+html,body,#__nuxt,#__layout{
+   @apply h-full;
+
+}
+
+*{
+   @apply font-nunito;
+}
+
+.fade-enter-active {
+   transition: opacity .5s;
+ }
+ .fade-enter, .fade-leave-to /* .fade-leave-active below version 2.1.8 */ {
+   opacity: 0;
+ }
+
+
+
+ .content-enter-active{
+   transition: opacity .6s  ease-out, transform .4s  ease-out;
+   transition-delay: .1s;
+}
+
+.content-leave-active {
+  transition: all .3s ease-out;
+}
+.content-enter {
+  transform: translateY(-360px);
+  opacity: 0;
+}
+.content-leave-to {
+  transform: translateY(160px);
+  opacity: 0;
+}
+// ---------------------------------
+  .opacity-enter-active {
+  transition: all .2s ease;
+}
+.opacity-leave-active {
+  transition: all .3s ease;
+  transition-delay: .3s;
+}
+.opacity-enter, .opacity-leave-to{
+  opacity: 0;
+}
+.opacity-leave-to{
+  opacity: 0;
+}
+
+
+// ---------------------------------
+
+.bounce-enter-active{
+  transition: opacity .6s  ease-out, transform .4s  ease-out;
+  transition-delay: .1s;
+}
+
+.bounce-leave-active {
+ transition: all .3s ease-out;
+}
+.bounce-enter {
+ transform:  scale(1.1);
+ opacity: 0;
+}
+.bounce-leave-to {
+ transform:  scale(1);
+ opacity: 0;
+}
